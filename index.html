@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="pstyle.css">
+    <script src="https://kit.fontawesome.com/69ccfcc3d7.js" crossorigin="anonymous"></script>
+    <script src="pscript.js"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container" style="background-image: images/bg9jpg;">
+            <nav>
+                <img src="images/mNAME2.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars sidemenu-toggle" id="sidemenu-toggle" onclick="myFunction()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE B.Tech Student</p>
+                <h1>Hi, I'm <span>Mahendra</span><br>From India</h1>
+            </div>
+         </div>
+    </div> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mahi photo.jpg ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a 3rd year Computer Science & Engineering Student. Currently I am pursuing B.Tech from SR University in Warangal. I love to do competitive programming and web Development. I am always curious to know how devices work and how they are connected on internet, how they commuicate each other, how internet works. So I am further trying to learn stuff, so i get to know how internet works, how devices are programmed and works in deep detail ...
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Java, Python, C#.Net, Datastructures.</li>
+                            <li><span>Web Technologies</span><br>PHP, MySQL, HTML, CSS, JavaScript.</li>
+                            <li><span>Soft Skills:</span><br>Leadership/Communication/presentation/Adaptability/problem solving/Team Management.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!-- <li><span>Intenships</span></li> -->
+                            <li><span>2024-current</span><br>A.I & M.L Internship from Gustovalley Technovations</li><li>Full stack web development internship from A.N.D intern(AICTE)</li>
+                            <li><span>2023-24</span><br>Cyber security virtual Internship by paloalto networks</li><li>ASP.NET and python training & certification</li>
+                            <li><span>Workshops</span><br>Hands-on Workshop on Nework Switching & Routing</li>
+                            <li>Data visualization for scientific computing using tableau workshop</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-26</span><br>B.Tech, Computer Science & Engineering<br>SR University ,warangal.</li>
+                            <li><span>2020-23</span><br>DIPLOMA, Computer Science & Engineering<br>Government polytechnic ,warangal.</li>
+                            <li><span>2020</span><br>Certificate of Secondary Education(SSC)<br>ST. Joseph Convent High School,warangal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- projects -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I do UI/UX design for the website that helps website to get a unique look..</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Design</h2>
+                    <p>I develop software applications with eye catching UI..</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Technical Consultaion</h2>
+                    <p>Assistance with academic projects and coding assignments..</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pho1.jpeg">
+                    <div class="layer">
+                        <h3>Movie Ticket Booking System</h3>
+                        <p>A web designing project on interface for booking online tickets for movies and to gather information about movies and theatres</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pho4.jpeg">
+                    <div class="layer">
+                        <h3>Sign Language Detection Using Convolution Neural Networks</h3>
+                        <p>Python project to detect the hand gestures using camera and translating them into text that is useful for communication with mute people.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pho3.jpeg">
+                    <div class="layer">
+                        <h3>Creating Our Own Security Camera</h3>
+                        <p>Security camera using python to provide security check,making aware of mal activities that are happening in our absence, that alerts us when there is a moment in the object.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+     <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>mahendragaddam997@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>91+ 7659072238</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mahendra.gaddam.180?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://whatsapp.com/dl/"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/mahi_0379?utm_source=qr&igsh=MWRjZmQxdmZzcml1Nw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mahendra-gaddam-a77221299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mahendra2238"><i class="fa fa-github"></i></a>
+                    </div>
+                    <a href="RESUME (1).pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                       <a style="margin-left: 40%; color: white;"  href="https://docs.google.com/spreadsheets/d/1VzM79mLkQEFyBOTyYh7zLcnAhBd-2mn7MEYesYNfV1g/edit?usp=sharing"></a>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Mahendra.<i class="fa-regular fa-heart"></i> Portfolio</p>
+        </div>
+    </div>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyDh92DfG3df-pKtINpCIPWHowG4nF4KKrNfRdPOBkmn18R8ydmxu4O-4usgUzwGIwkEw/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+    </script>
+</body>
+</html>
